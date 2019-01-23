@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - JRDB (2.1.1):
+    - FMDB
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - JRDB
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FMDB
+    - JRDB
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JRDB: 3d39482c7314ee58e4c0a8617f131324ccabc214
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 0a8dc5dc1ad0f4ca922f6d0d2f9f8cd9db3fd30f
+
+COCOAPODS: 1.5.3

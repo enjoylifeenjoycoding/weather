@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7l-y5-Mzj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkH-Mq-eQf">
+                                <rect key="frame" x="15" y="55" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WIK-lG-IQs"/>
+                                    <constraint firstAttribute="width" constant="30" id="kda-oD-x15"/>
+                                </constraints>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="buttonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMJ-Xv-ZcB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvb-EI-Ng9">
+                                <rect key="frame" x="330" y="55" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DWa-rn-n7n"/>
+                                    <constraint firstAttribute="height" constant="30" id="nsU-GX-07i"/>
+                                </constraints>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="buttonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYL-mm-Dpr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-H9-Gvb">
+                                <rect key="frame" x="55" y="50" width="265" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="U6k-jg-Oyk"/>
+                                </constraints>
+                                <state key="normal" title="Kallang:Light Showers  refresh"/>
+                                <connections>
+                                    <action selector="buttonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Obl-XL-oRS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lvb-EI-Ng9" firstAttribute="leading" secondItem="cXe-H9-Gvb" secondAttribute="trailing" constant="10" id="7g6-Hn-FUj"/>
+                            <constraint firstItem="SkH-Mq-eQf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="AqU-dH-Lf9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b7l-y5-Mzj" secondAttribute="trailing" id="DL9-pt-Jim"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b7l-y5-Mzj" secondAttribute="bottom" id="JW6-vE-SgF"/>
+                            <constraint firstItem="SkH-Mq-eQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Lpg-er-bSL"/>
+                            <constraint firstItem="cXe-H9-Gvb" firstAttribute="centerY" secondItem="SkH-Mq-eQf" secondAttribute="centerY" id="VIs-rW-Iz0"/>
+                            <constraint firstItem="cXe-H9-Gvb" firstAttribute="leading" secondItem="SkH-Mq-eQf" secondAttribute="trailing" constant="10" id="bHK-Nr-E8P"/>
+                            <constraint firstItem="b7l-y5-Mzj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="dcO-8B-fYl"/>
+                            <constraint firstItem="b7l-y5-Mzj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r1k-1u-LTG"/>
+                            <constraint firstItem="lvb-EI-Ng9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="sfh-BR-N3R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lvb-EI-Ng9" secondAttribute="trailing" constant="15" id="ygL-gc-88k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="b7l-y5-Mzj" id="EKn-HX-wFz"/>
+                        <outlet property="weatherBtn" destination="cXe-H9-Gvb" id="wgL-Hl-buS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
